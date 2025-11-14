@@ -1,351 +1,943 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1BTDQ08DY"></script>
-		<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'G-Z1BTDQ08DY');
-		</script>
-		<script>
+<html lang="en">
+<head>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z1BTDQ08DY"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-Z1BTDQ08DY');
+	</script>
+	<script>
     !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init push capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-    posthog.init('phc_xjR9rbGz3zqJROGBfB0HWPrWWhuihEEY32Ku23PGAJa',{api_host:'https://us.i.posthog.com', person_profiles: 'identified_only' // or 'always' to create profiles for anonymous users as well
-        })
-</script>
+    posthog.init('phc_xjR9rbGz3zqJROGBfB0HWPrWWhuihEEY32Ku23PGAJa',{api_host:'https://us.i.posthog.com', person_profiles: 'identified_only'})
+	</script>
 
-		<title>GAUTHAM MAHADEVAN PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/mainnew.css" />  <!-- changed from main to mainnew for latest version of fontawesome -->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+	<title>Gautham Mahadevan - Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/modern.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+	<!-- Navigation -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<div class="nav-logo">GM</div>
+			<ul class="nav-menu">
+				<li><a href="#intro" class="nav-link">Home</a></li>
+				<li><a href="#fun-facts" class="nav-link">Stats</a></li>
+				<li><a href="#philosophy" class="nav-link">Philosophy</a></li>
+				<li><a href="#projects" class="nav-link">Projects</a></li>
+				<li><a href="#skills" class="nav-link">Skills</a></li>
+				<li><a href="#achievements" class="nav-link">Achievements</a></li>
+				<li><a href="#experience" class="nav-link">Experience</a></li>
+				<li><a href="#education" class="nav-link">Education</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
+			</ul>
+			<div class="hamburger">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Skills</a></li>
-							<li><a href="#three">Work Experience</a></li>
-							<li><a href="#four">Education</a></li>
-							<li><a href="#five">Contact Information</a></li>
-						</ul>
-					</nav>
+	<!-- Hero Section -->
+	<section id="intro" class="hero">
+		<div class="hero-background">
+			<div class="gradient-orb orb-1"></div>
+			<div class="gradient-orb orb-2"></div>
+			<div class="gradient-orb orb-3"></div>
+		</div>
+		<div class="hero-content">
+			<div class="hero-text">
+				<div class="hero-tagline">
+					<span class="tagline-icon">📊</span>
+					<span class="tagline-text">Turning Data into Decisions, One Query at a Time</span>
 				</div>
-			</section>
+				<h1 class="hero-title">
+					<span class="gradient-text">Gautham Mahadevan</span>
+				</h1>
+				<p class="hero-subtitle">
+					<i class="fas fa-chart-line"></i> Data Analyst & Developer 
+					<span class="subtitle-emoji">🔍</span>
+				</p>
+				<div class="hero-quote">
+					<i class="fas fa-quote-left quote-icon"></i>
+					<p class="quote-text">"In God we trust, all others must bring data" - W. Edwards Deming</p>
+					<i class="fas fa-quote-right quote-icon"></i>
+				</div>
+				<p class="hero-description">
+					Hey there! I'm a <strong>data detective</strong> 🕵️‍♂️ who turns messy spreadsheets into beautiful insights. 
+					With over 5 years of experience, I've helped businesses across Banking, B2B Sales,
+					Digital Marketing, and Quick Commerce make data-driven decisions. I speak fluent SQL, Python, and Tableau! 
+					<span class="fun-text">No data is too big, no insight too small!</span>
+				</p>
+				<div class="hero-links">
+					<a href="https://www.linkedin.com/in/gautham-mahadevan/" target="_blank" class="btn btn-primary">
+						<i class="fab fa-linkedin"></i> LinkedIn
+					</a>
+					<a href="https://github.com/gauthamgtg" target="_blank" class="btn btn-secondary">
+						<i class="fab fa-github"></i> GitHub
+					</a>
+					<a href="https://flowcv.com/resume/vl6k2hbbfp" target="_blank" class="btn btn-outline">
+						<i class="fas fa-file-pdf"></i> Resume
+					</a>
+				</div>
+			</div>
+			<div class="hero-stats">
+				<div class="stat-card">
+					<div class="stat-icon">⏱️</div>
+					<div class="stat-number">5+</div>
+					<div class="stat-label">Years of Data Crunching</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-icon">🚀</div>
+					<div class="stat-number">13+</div>
+					<div class="stat-label">Projects Delivered</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-icon">⚡</div>
+					<div class="stat-number">∞</div>
+					<div class="stat-label">Coffees Consumed</div>
+				</div>
+			</div>
+		</div>
+		<div class="scroll-indicator">
+			<a href="#projects"><i class="fas fa-chevron-down"></i></a>
+		</div>
+	</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+	<!-- Fun Facts Section -->
+	<section id="fun-facts" class="fun-facts-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">By The Numbers 📈</h2>
+				<p class="section-subtitle">Some fun stats about my data journey</p>
+			</div>
+			<div class="facts-grid">
+				<div class="fact-card">
+					<div class="fact-icon">📊</div>
+					<div class="fact-number" data-target="20">0</div>
+					<div class="fact-label">+ Dashboards Created</div>
+				</div>
+				<div class="fact-card">
+					<div class="fact-icon">🔍</div>
+					<div class="fact-number" data-target="500">0</div>
+					<div class="fact-label">+ SQL Queries Written</div>
+				</div>
+				<div class="fact-card">
+					<div class="fact-icon">📉</div>
+					<div class="fact-number" data-target="30">0</div>
+					<div class="fact-label">% Average Performance Boost</div>
+				</div>
+				<div class="fact-card">
+					<div class="fact-icon">💻</div>
+					<div class="fact-number" data-target="20000">0</div>
+					<div class="fact-label">+ Lines of Code Written</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>GAUTHAM MAHADEVAN</h1>
-							<p>Data analyst with over 3 years of experience in handling, interpreting and presenting large and 
-								diverse datasets to satisfy businees needs in diverse sectors such as Banking, B2B Sales,
-								Insurance, Digital Marketing and Quick Commerce. Skilled in using Tableau and Excel to present the story to stakeholders.
-								<p>LinkedIn : <a href="https://www.linkedin.com/in/gautham-mahadevan/" target="blank">Gautham Mahadevan</a><br /></p>
-								<p>GitHub : <a href="https://github.com/gauthamgtg" target="blank">Projects in Github</a><br /></p>
-								<p>Resume : <a href="https://flowcv.com/resume/vl6k2hbbfp" target="blank">Resume PDF</a><br /></p>
-							<!-- and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
-							<ul class="actions"> -->
-								<a href="#one" class="button scrolly">View Projects</a>
-								<a href="#two" class="button scrolly" style="margin-left: 20px;">View Skills</a>
-							</ul>
+	<!-- Philosophy Section -->
+	<section id="philosophy" class="philosophy-section">
+		<div class="container">
+			<div class="philosophy-content">
+				<div class="philosophy-text">
+					<h2 class="philosophy-title">My Data Philosophy 🎯</h2>
+					<div class="philosophy-quotes">
+						<div class="philosophy-quote-item">
+							<div class="quote-bubble">
+								<p>"Data is like garbage. You'd better know what you're going to do with it before you collect it."</p>
+								<span class="quote-author">- Mark Twain (sort of)</span>
+							</div>
 						</div>
-					</section>
-
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<div class="inner"><h2>Projects</h2></div>
-						<section>
-							<a href="https://public.tableau.com/app/profile/gautham.m3948/viz/AnimeRecommendations_17051299242660/Main" target="blank" class="image"><img src="images/Anime_recommendation.png" alt="Tableau Dashboard" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Anime Recommendation System</h2>
-									<p>Anime Recommendation System built in tableau using myanimelist.</p>
-									<ul class="actions">
-										<li><a href="https://public.tableau.com/app/profile/gautham.m3948/viz/AnimeRecommendations_17051299242660/Main" target="blank" class="button">View Project</a></li>
-									</ul>
-								</div>
+						<div class="philosophy-quote-item">
+							<div class="quote-bubble">
+								<p>I believe in <strong>clean data, clear insights, and actionable results</strong>. Every dataset tells a story, and I'm here to help you read it!</p>
 							</div>
-						</section>	
-						<section>
-							<a href="https://github.com/gauthamgtg/Flash.co-Play-Store-Review-NPS-Analysis" target="blank" class="image"><img src="images/flash nps.jpg" alt="Tableau Dashboard" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Flash.co - NPS Analysis</h2>
-									<p>NPS Analysis based on the app's Playstore and Appstore Reviews.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/gauthamgtg/Flash.co-Play-Store-Review-NPS-Analysis" target="blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202304/zomato-2-1627023112_0-sixteen_nine.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Zomato Data Cleaning and Analyis</h2>
-									<p>Zomato Data Cleaning and Analyis using Tableau Prep builder and Tableau desktop.</p>
-									<ul class="actions">
-										<li><a href="https://github.com/gauthamgtg/Zomato_data_analysis" target="blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/paytm.png" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Paytm - Analysis and forecasting of KPI </h2>
-									<p>Analysis and forecasting of Paytm's key performance metrics based on quaterly results</p>
-									<ul class="actions">
-										<li><a href="https://public.tableau.com/app/profile/gautham.m3948/viz/Paytm_16912363316980/Paytm" target="blank" class="button">View Project</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-					<section>
-						<!-- <a href="#" class="image"><img src="images/paytm.png" alt="" data-position="25% 25%" /></a> -->
-						
-
-				<!-- Three -->
-					
-                    <section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h1>Technical Skills</h1>
-							<!-- <p>Technical and Software Skills</p> -->
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-database"></span>
-									<h3>SQL</h3>
-									<p>MySQL, PostgreSQL, Google Bigquery.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-chart-area"></span>
-									<h3>Tableau</h3>
-									<p>Tableau desktop, Tableau Prep Builder, and Tableaus Server.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-file-excel"></span>
-									<h3>Excel</h3>
-									<p>Advanced Excel, Pivot Tables, Power pivot, and Dashboards.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Python</h3>
-									<p>Data cleaning and Data visualisation using Numpy, Pandas, Seaborn, Matplotlib</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Clevertap</h3>
-									<p>Tracking user journey, funnel analysis, sessions tracking and improving user experience.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-signal"></span>
-									<h3>Power BI</h3>
-									<p>Advanced charts.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-code-branch"></span>
-									<h3>GitHub</h3>
-									<p>GitHub - commit, push, pull.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-poll"></span>
-									<h3>LookerStudio</h3>
-									<p>Reports and charts</p>
-								</section>
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
 						</div>
-					</section>
-					<section id="three" class="wrapper style2 spotlights">
-						<!-- <div class="box"> -->
-						<div class="inner">
-							<section>
-							<h1>Work experience</h1>
-							<h2>Data Analyst 2,Zocket</h2><h3>August 2023 - Present</h3>
-							<p><li>Spearheaded the creation of an analytics framework, enhancing data collection procedures and pipeline efficiency,
-								resulting in a structured schema which reduced querying time by 30%.</li> 
-							   <li>Implemented automated data pipelines integrating multiple sources to streamline the generation of manual, investor,
-								   and MIS reports, achieving a reduction of more than 20 hours spent in report preparation.</li>
-							<li>Revamped the existing revenue calculation logic that rectified prior calculation errors, reducing revenue discrepancies by 15%.</li>
-							<li>Developed and maintained dashboards and reports, providing real-time updates on key performance indicators 
-								contributing to increased visibility which led to a 30% improvement in campaign and app performance.</li>
-							<li>Leveraged revenue and retention cohorts to identify customer behaviour patterns, 
-								driving a 15% MOM revenue growth.</li>
-							<li>Devised CleverTap funnel dashboards to analyze user behaviour, understand customer pain points 
-								and optimize the customer journey, resulting in a 20% improvement in user acquisition and a 4% increase in conversion rate.</li>
-							<li>Provided crucial support to the finance team, offering data-driven insights and
-								assisting with revenue, audit reports, and performance tracking, contributing 
-								to a 15% faster financial planning and forecasting.</li>
-								</p>
-							<h2>Analyst,Dunzo</h2><h3>Sept 2022 - July 2023</h3>
-							<p> <li>Crafted coupons, banners, and employed A/B testing to
-								measure the effectiveness of the campaigns and found
-								<b>improvement in the merchant's retention rate by 15%
-								and order volume by 10%</b>.</li>
-								<li>Developed a logic to calculate total sessions lost due to
-								rain sessions and curfew mode for B2B enabling
-								attribution which helped in improving the task distance,
-								leading to a <b>5% increase in GM</b>.</li>
-								<li>Designed a data model to daily track and enhance the
-								performance of a Tele-calling team and over 30 sales
-								officers, leading to a <b>20% boost in productivity.</b></li>
-								<li>Implemented dashboards and reports for monitoring more
-								than 20 KPIs, mainly including CR%, SO%, CPT, AOV, GM,
-								EPH, and TPH at various levels of granularity, resulting in a
-								significant <b>reduction of 12 hours per week spent in
-								manual reporting</b>.</li>
-								<li>Achieved an <b>80% reduction in slot time </b>in GCP through
-								the successful completion of a project focused on
-								optimizing queries of Tableau dashboards.</li>
-								<li>Engaged in generating ad-hoc reports and analyses to
-								facilitate data-driven business decisions for various
-								stakeholders.</li>
-								<li>Implemented derived tables to optimize data retrieval,
-								resulting in a remarkable <b>90% reduction in slot time,
-								significantly simplifying query complexity and length</b>.</li>
-								<li>Strategically implemented dynamic surge pricing for B2B
-								merchants based on real-time demand and supply, which
-								led to a <b>10% increase in gross margin</b>.</li>
-								</p>
-							</section>
-							<section>
-								<h2>Risk Investigation Manager, HDFC Bank</h2><h3>Aug 2020 - Aug 2022</h3>
-								<p> <li>  <b>Managed risk process forover 10 different banking
-									products </b> mainly including Retail Assets like PL, AL, TWL,
-									GL, and credit cards following disbursement of loans from
-									low ticket to high ticket size of 50 lakhs.</li>
-									<li>Perform highly detailed analysis of fraud transactions by
-									analyzing logs (SMS, Email, OTP, IP), merchant, payment
-									gateway, and historical records for each case, while
-									<b>achieving 100% adherence to the TAT</b>.</li>
-									<li>Exhibited trends, victim's demography, fraud channels,
-									and MO, facilitating the creation of multiple fraud rules
-									and awareness campaigns with cross-functional teams,
-									leading to a <b>5% reduction in fraud cases and a 20%
-									decrease in response time</b>.</li>
-									<li>Resolved complaints received in the National cybercrime
-									portal as a Nodal Officer and made a timely analysis and
-									action to <b> recover over Rs.2 lakhs</b>.</li>
-									</p>
-								</section>
-						<!-- </div> -->
 					</div>
-				<!-- </section> -->
-			</section>
-				<!-- Three -->
-                <section id="four" class="wrapper style1-alt fade-up">
-                    <div class="inner">
-                        <h1>Education</h1>
-                        <!-- <p>Technical and Software Skills</p> -->
-                        <div class="features">
-                            <section>
-                                <span class="icon solid major fa-user-graduate"></span>
-                                <h3>Master of Business Administration (M.B.A)</h3>
-                                <p><li>Specialisation : Marketing and Finance</li>
-                                <li>College : Anna University, Guindy</li>
-                                <li>Grade : 7.4</li></p>
-                            </section>
-                            <section>
-                                <span class="icon solid major fa-graduation-cap"></span>
-                                <h3>Bachelor of Engineering (B.E)</h3>
-                                <p><li>Stream : Mechanical Engineering</li>
-                                <li>College : Panimalar Engineering College</li>
-                                <li>Grade : 7.4</li></p>
-                            </section>
-                            <section>
-                                <span class="icon solid major fa-school"></span>
-                                <h3>12th</h3>
-                                <p><li>Specialisation : Computer science and Maths</li>
-                                <li>School : Velammal</li>
-                                <li>Percentage : 95.3%</li></p>
-                            </section>
-                            <section>
-                                <span class="icon solid major fa-chalkboard-teacher"></span>
-                                <h3>10th</h3>
-                                <p><li>Specialisation : Science and Maths</li>
-                                <li>School : SDCVV</li>
-                                <li>Grade : 8.8</li></p>
-                            </section>
-                        </div>
-                        <!-- <ul class="actions">
-                            <li><a href="generic.html" class="button">Learn more</a></li>
-                        </ul> -->
-                    </div>
-                </section>
-					<section id="five" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>About me</h2>
-							<!-- <p>Ask me about SQL, Tableau, PowerBI, Powerpoint and Excel.</p> -->
-							<div class="rows">
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>City</h3>
-											<span>Chennai</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">gautham2597@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>+91-7092702458</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-												<!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-												<li><a href="https://github.com/gauthamgtg" target="blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<!-- <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li> -->
-												<li><a href="https://www.linkedin.com/in/gautham-mahadevan/" target="blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
+					<div class="philosophy-principles">
+						<div class="principle-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Question everything, trust the data</span>
+						</div>
+						<div class="principle-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Automate the boring, analyze the interesting</span>
+						</div>
+						<div class="principle-item">
+							<i class="fas fa-check-circle"></i>
+							<span>Visualize first, explain later</span>
+						</div>
+						<div class="principle-item">
+							<i class="fas fa-check-circle"></i>
+							<span>If you can't measure it, you can't improve it</span>
+						</div>
+					</div>
+				</div>
+				<div class="philosophy-visual">
+					<div class="data-visualization">
+						<div class="chart-container">
+							<div class="chart-bar" style="height: 80%">
+								<span class="chart-label">SQL</span>
+							</div>
+							<div class="chart-bar" style="height: 75%">
+								<span class="chart-label">Python</span>
+							</div>
+							<div class="chart-bar" style="height: 90%">
+								<span class="chart-label">Tableau</span>
+							</div>
+							<div class="chart-bar" style="height: 70%">
+								<span class="chart-label">Excel</span>
 							</div>
 						</div>
-					</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
+	<!-- Projects Section -->
+	<section id="projects" class="projects-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">My Projects 🚀</h2>
+				<p class="section-subtitle">Organized by technology stack - because organization is key! 🔑</p>
+				<div class="section-catchphrase">
+					<span class="catchphrase-text">"Code is poetry, data is the story"</span>
+				</div>
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<!-- <li>&copy; All rights reserved.</li> -->
-						<li>Designed with the help of Youtube, HTML5UP and GitHub ;)</li>
-					</ul>
+			<!-- Python Projects -->
+			<div class="tech-group">
+				<div class="tech-header">
+					<i class="fab fa-python tech-icon"></i>
+					<h3 class="tech-title">Python Projects</h3>
 				</div>
-			</footer>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Key Account Stats</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Analytics and reporting system for key account management with automated data processing.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Key-Account-Stats" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Ad Rejections Analysis</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Analysis tool for tracking and analyzing ad rejection patterns to optimize campaign performance.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/ad-rejections" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
 
-	</body>
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Hotwheels Sale Tracker</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Automated tracking system for Hotwheels sales data and inventory management.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/hotwheels-sale" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Ad Details Analytics</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Comprehensive analytics platform for detailed ad performance metrics and insights.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Ad-Details" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>AI Usage Analytics</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Tracking and analytics system for AI tool usage patterns and optimization.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/ai-usage" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Mercury Automation</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Automation scripts for Mercury platform workflows and data processing.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/mercury-automation" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Meta Marketing Insights</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Data analysis and insights extraction from Meta marketing campaigns and performance metrics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/meta-marketing-insights" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Stripe Transactions Automation</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Automated processing and analysis of Stripe payment transactions and financial data.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/stripe-transactions-automation" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Overall Stats Dashboard</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Comprehensive dashboard for aggregating and visualizing overall business statistics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Overall-stats" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Abacus Problem Generator</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Educational tool for generating mathematical problems for abacus training and practice.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Abacus-Problem-Generator" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Used Car Price Predictor</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Machine learning model for predicting used car prices based on various features and market data.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Used-Car-Price-Predictor" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Web Development Projects -->
+			<div class="tech-group">
+				<div class="tech-header">
+					<i class="fab fa-html5 tech-icon"></i>
+					<h3 class="tech-title">Web Development</h3>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>SaaS Analytics Dashboard</h4>
+							<span class="project-badge">HTML/CSS</span>
+						</div>
+						<p class="project-description">Modern SaaS analytics dashboard with interactive visualizations and real-time data updates.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/SaaS-Analytics" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Portfolio Website</h4>
+							<span class="project-badge">HTML/CSS</span>
+						</div>
+						<p class="project-description">Modern, responsive portfolio website showcasing projects and professional experience.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/portfolio" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- AI & Machine Learning Projects -->
+			<div class="tech-group">
+				<div class="tech-header">
+					<i class="fas fa-brain tech-icon"></i>
+					<h3 class="tech-title">AI & Machine Learning</h3>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card featured">
+						<div class="project-card-header">
+							<h4>Invoice OCR Reader</h4>
+							<span class="project-badge">Python • Streamlit • Computer Vision</span>
+						</div>
+						<p class="project-description">A 100% locally running computer vision app that leverages Gemma-3 vision capabilities and Streamlit to perform OCR and extract structured text from images.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/invoice-ocr-reader" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>AI Engineering Hub</h4>
+							<span class="project-badge">Jupyter Notebook</span>
+						</div>
+						<p class="project-description">In-depth tutorials on LLMs, RAGs and real-world AI agent applications with comprehensive examples and documentation.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/ai-engineering-hub" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Amazon Agent</h4>
+							<span class="project-badge">AI Agent</span>
+						</div>
+						<p class="project-description">AI-powered agent for automating Amazon-related tasks and data extraction.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/amazon-agent" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Data Analytics Projects -->
+			<div class="tech-group">
+				<div class="tech-header">
+					<i class="fas fa-chart-line tech-icon"></i>
+					<h3 class="tech-title">Data Analytics & Visualization</h3>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card featured">
+						<div class="project-card-header">
+							<h4>Real-time Analytics with Spark</h4>
+							<span class="project-badge">Spark • Analytics</span>
+						</div>
+						<p class="project-description">Real-time analytics with Spark: User Activity Monitoring for a QuickCommerce platform with streaming data processing.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Real-time-analytics-with-Spark" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Ad Data Analytics</h4>
+							<span class="project-badge">Data Analysis</span>
+						</div>
+						<p class="project-description">Comprehensive analytics platform for advertising data with insights and performance metrics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/ad-data" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Indian User Car Price Predictor</h4>
+							<span class="project-badge">ML • Python</span>
+						</div>
+						<p class="project-description">Machine learning model specifically trained on Indian market data for accurate car price predictions.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/indian-usercar-price-predictor" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Center Point Analysis</h4>
+							<span class="project-badge">Python</span>
+						</div>
+						<p class="project-description">Geospatial analysis tool for calculating and visualizing center points of data clusters.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/center_point" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Other Projects -->
+			<div class="tech-group">
+				<div class="tech-header">
+					<i class="fas fa-tools tech-icon"></i>
+					<h3 class="tech-title">Other Projects</h3>
+				</div>
+				<div class="projects-grid">
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Vercel Dashboard</h4>
+							<span class="project-badge">Dashboard</span>
+						</div>
+						<p class="project-description">Custom dashboard for monitoring and managing Vercel deployments and analytics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Vercel-Dashboard" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Payment SaaS Platform</h4>
+							<span class="project-badge">SaaS</span>
+						</div>
+						<p class="project-description">Payment processing SaaS platform with subscription management and analytics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Payment-SAAS" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Streamlit Tutorial</h4>
+							<span class="project-badge">Tutorial • Streamlit</span>
+						</div>
+						<p class="project-description">Comprehensive tutorial and examples for building interactive web apps with Streamlit.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/Streamlit-Tutorial" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+
+					<div class="project-card">
+						<div class="project-card-header">
+							<h4>Google Spends Automation</h4>
+							<span class="project-badge">Automation</span>
+						</div>
+						<p class="project-description">Automated tracking and analysis of Google advertising spend and performance metrics.</p>
+						<div class="project-footer">
+							<a href="https://github.com/gauthamgtg/google-spends-automation" target="_blank" class="project-link">
+								<i class="fab fa-github"></i> View Code
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Skills Section -->
+	<section id="skills" class="skills-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">My Toolbox 🛠️</h2>
+				<p class="section-subtitle">Technologies and tools I work with (and love!)</p>
+				<div class="section-catchphrase">
+					<span class="catchphrase-text">"Give a data analyst the right tools, and they'll move mountains... of data!"</span>
+				</div>
+			</div>
+			<div class="skills-grid">
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-database"></i></div>
+					<h3>SQL</h3>
+					<p>MySQL, PostgreSQL, Google BigQuery</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+					<h3>Tableau</h3>
+					<p>Tableau Desktop, Prep Builder, Server</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+					<h3>Excel</h3>
+					<p>Advanced Excel, Pivot Tables, Power Pivot</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fab fa-python"></i></div>
+					<h3>Python</h3>
+					<p>NumPy, Pandas, Seaborn, Matplotlib</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-link"></i></div>
+					<h3>CleverTap</h3>
+					<p>User journey tracking, funnel analysis</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-signal"></i></div>
+					<h3>Power BI</h3>
+					<p>Advanced charts and dashboards</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fab fa-github"></i></div>
+					<h3>GitHub</h3>
+					<p>Version control and collaboration</p>
+				</div>
+				<div class="skill-card">
+					<div class="skill-icon"><i class="fas fa-poll"></i></div>
+					<h3>Looker Studio</h3>
+					<p>Reports and data visualization</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Achievements Section -->
+	<section id="achievements" class="achievements-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Key Achievements 🏆</h2>
+				<p class="section-subtitle">Numbers don't lie - here's proof!</p>
+			</div>
+			<div class="achievements-grid">
+				<div class="achievement-card highlight">
+					<div class="achievement-icon">⚡</div>
+					<div class="achievement-number">30%</div>
+					<div class="achievement-label">Reduced Query Time</div>
+					<div class="achievement-desc">Optimized data pipelines for faster insights</div>
+				</div>
+				<div class="achievement-card highlight">
+					<div class="achievement-icon">⏰</div>
+					<div class="achievement-number">20+</div>
+					<div class="achievement-label">Hours Saved Weekly</div>
+					<div class="achievement-desc">Automated manual reporting processes</div>
+				</div>
+				<div class="achievement-card highlight">
+					<div class="achievement-icon">📈</div>
+					<div class="achievement-number">15%</div>
+					<div class="achievement-label">Revenue Growth</div>
+					<div class="achievement-desc">Data-driven strategies that delivered results</div>
+				</div>
+				<div class="achievement-card highlight">
+					<div class="achievement-icon">🎯</div>
+					<div class="achievement-number">90%</div>
+					<div class="achievement-label">Slot Time Reduction</div>
+					<div class="achievement-desc">Query optimization mastery</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Experience Section -->
+	<section id="experience" class="experience-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Work Experience 💼</h2>
+				<p class="section-subtitle">My professional journey - where data meets business</p>
+				<div class="section-catchphrase">
+					<span class="catchphrase-text">"From spreadsheets to success stories"</span>
+				</div>
+			</div>
+			<div class="timeline">
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>Data Analyst 2</h3>
+							<span class="timeline-company">Zocket</span>
+							<span class="timeline-date">August 2023 - Present</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Spearheaded the creation of an analytics framework, enhancing data collection procedures and pipeline efficiency, resulting in a structured schema which reduced querying time by 30%.</li>
+							<li>Implemented automated data pipelines integrating multiple sources to streamline the generation of manual, investor, and MIS reports, achieving a reduction of more than 20 hours spent in report preparation.</li>
+							<li>Revamped the existing revenue calculation logic that rectified prior calculation errors, reducing revenue discrepancies by 15%.</li>
+							<li>Developed and maintained dashboards and reports, providing real-time updates on key performance indicators contributing to increased visibility which led to a 30% improvement in campaign and app performance.</li>
+							<li>Leveraged revenue and retention cohorts to identify customer behaviour patterns, driving a 15% MOM revenue growth.</li>
+							<li>Devised CleverTap funnel dashboards to analyze user behaviour, understand customer pain points and optimize the customer journey, resulting in a 20% improvement in user acquisition and a 4% increase in conversion rate.</li>
+							<li>Provided crucial support to the finance team, offering data-driven insights and assisting with revenue, audit reports, and performance tracking, contributing to a 15% faster financial planning and forecasting.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>Analyst</h3>
+							<span class="timeline-company">Dunzo</span>
+							<span class="timeline-date">September 2022 - July 2023</span>
+						</div>
+						<ul class="timeline-details">
+							<li>Crafted coupons, banners, and employed A/B testing to measure the effectiveness of the campaigns and found <strong>improvement in the merchant's retention rate by 15% and order volume by 10%</strong>.</li>
+							<li>Developed a logic to calculate total sessions lost due to rain sessions and curfew mode for B2B enabling attribution which helped in improving the task distance, leading to a <strong>5% increase in GM</strong>.</li>
+							<li>Designed a data model to daily track and enhance the performance of a Tele-calling team and over 30 sales officers, leading to a <strong>20% boost in productivity</strong>.</li>
+							<li>Implemented dashboards and reports for monitoring more than 20 KPIs, mainly including CR%, SO%, CPT, AOV, GM, EPH, and TPH at various levels of granularity, resulting in a significant <strong>reduction of 12 hours per week spent in manual reporting</strong>.</li>
+							<li>Achieved an <strong>80% reduction in slot time</strong> in GCP through the successful completion of a project focused on optimizing queries of Tableau dashboards.</li>
+							<li>Engaged in generating ad-hoc reports and analyses to facilitate data-driven business decisions for various stakeholders.</li>
+							<li>Implemented derived tables to optimize data retrieval, resulting in a remarkable <strong>90% reduction in slot time, significantly simplifying query complexity and length</strong>.</li>
+							<li>Strategically implemented dynamic surge pricing for B2B merchants based on real-time demand and supply, which led to a <strong>10% increase in gross margin</strong>.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="timeline-item">
+					<div class="timeline-marker"></div>
+					<div class="timeline-content">
+						<div class="timeline-header">
+							<h3>Risk Investigation Manager</h3>
+							<span class="timeline-company">HDFC Bank</span>
+							<span class="timeline-date">August 2020 - August 2022</span>
+						</div>
+						<ul class="timeline-details">
+							<li><strong>Managed risk process for over 10 different banking products</strong> mainly including Retail Assets like PL, AL, TWL, GL, and credit cards following disbursement of loans from low ticket to high ticket size of 50 lakhs.</li>
+							<li>Perform highly detailed analysis of fraud transactions by analyzing logs (SMS, Email, OTP, IP), merchant, payment gateway, and historical records for each case, while <strong>achieving 100% adherence to the TAT</strong>.</li>
+							<li>Exhibited trends, victim's demography, fraud channels, and MO, facilitating the creation of multiple fraud rules and awareness campaigns with cross-functional teams, leading to a <strong>5% reduction in fraud cases and a 20% decrease in response time</strong>.</li>
+							<li>Resolved complaints received in the National cybercrime portal as a Nodal Officer and made a timely analysis and action to <strong>recover over Rs.2 lakhs</strong>.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Education Section -->
+	<section id="education" class="education-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Education 🎓</h2>
+				<p class="section-subtitle">Where I learned to love data (and coffee)</p>
+			</div>
+			<div class="education-grid">
+				<div class="education-card">
+					<div class="education-icon"><i class="fas fa-user-graduate"></i></div>
+					<h3>Master of Business Administration (M.B.A)</h3>
+					<p class="education-detail"><strong>Specialization:</strong> Marketing and Finance</p>
+					<p class="education-detail"><strong>College:</strong> Anna University, Guindy</p>
+					<p class="education-detail"><strong>Grade:</strong> 7.4</p>
+				</div>
+				<div class="education-card">
+					<div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+					<h3>Bachelor of Engineering (B.E)</h3>
+					<p class="education-detail"><strong>Stream:</strong> Mechanical Engineering</p>
+					<p class="education-detail"><strong>College:</strong> Panimalar Engineering College</p>
+					<p class="education-detail"><strong>Grade:</strong> 7.4</p>
+				</div>
+				<div class="education-card">
+					<div class="education-icon"><i class="fas fa-school"></i></div>
+					<h3>12th Standard</h3>
+					<p class="education-detail"><strong>Specialization:</strong> Computer Science and Maths</p>
+					<p class="education-detail"><strong>School:</strong> Velammal</p>
+					<p class="education-detail"><strong>Percentage:</strong> 95.3%</p>
+				</div>
+				<div class="education-card">
+					<div class="education-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+					<h3>10th Standard</h3>
+					<p class="education-detail"><strong>Specialization:</strong> Science and Maths</p>
+					<p class="education-detail"><strong>School:</strong> SDCVV</p>
+					<p class="education-detail"><strong>Grade:</strong> 8.8</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact-section">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="section-title">Let's Connect! 🤝</h2>
+				<p class="section-subtitle">Have a data problem? Let's solve it together!</p>
+				<div class="section-catchphrase">
+					<span class="catchphrase-text">"The best insights come from collaboration"</span>
+				</div>
+			</div>
+			<div class="contact-grid">
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+					<h3>Location</h3>
+					<p>Chennai, India</p>
+				</div>
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fas fa-envelope"></i></div>
+					<h3>Email</h3>
+					<a href="mailto:gautham2597@gmail.com">gautham2597@gmail.com</a>
+				</div>
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fas fa-phone"></i></div>
+					<h3>Phone</h3>
+					<a href="tel:+917092702458">+91-7092702458</a>
+				</div>
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+					<h3>LinkedIn</h3>
+					<a href="https://www.linkedin.com/in/gautham-mahadevan/" target="_blank">Connect with me</a>
+				</div>
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fab fa-github"></i></div>
+					<h3>GitHub</h3>
+					<a href="https://github.com/gauthamgtg" target="_blank">View my projects</a>
+				</div>
+				<div class="contact-card">
+					<div class="contact-icon"><i class="fas fa-file-pdf"></i></div>
+					<h3>Resume</h3>
+					<a href="https://flowcv.com/resume/vl6k2hbbfp" target="_blank">Download Resume</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-content">
+				<div class="footer-quote">
+					<p>"Data is the new oil, and I'm the refinery!" 🛢️</p>
+				</div>
+				<p>&copy; 2025 Gautham Mahadevan. All rights reserved.</p>
+				<p class="footer-note">Designed with <span class="heart">❤️</span>, data insights, and way too much coffee ☕</p>
+				<div class="footer-fun">
+					<p class="footer-stats">Fun fact: This page was built with <span id="lines-of-code">0</span> lines of code (and counting!)</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script>
+		// Smooth scrolling
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					target.scrollIntoView({
+						behavior: 'smooth',
+						block: 'start'
+					});
+				}
+			});
+		});
+
+		// Mobile menu toggle
+		const hamburger = document.querySelector('.hamburger');
+		const navMenu = document.querySelector('.nav-menu');
+		
+		if (hamburger) {
+			hamburger.addEventListener('click', () => {
+				hamburger.classList.toggle('active');
+				navMenu.classList.toggle('active');
+			});
+
+			document.querySelectorAll('.nav-link').forEach(link => {
+				link.addEventListener('click', () => {
+					hamburger.classList.remove('active');
+					navMenu.classList.remove('active');
+				});
+			});
+		}
+
+		// Navbar scroll effect
+		window.addEventListener('scroll', () => {
+			const navbar = document.querySelector('.navbar');
+			if (window.scrollY > 50) {
+				navbar.classList.add('scrolled');
+			} else {
+				navbar.classList.remove('scrolled');
+			}
+		});
+
+		// Remove preload class after page loads
+		window.addEventListener('load', () => {
+			document.body.classList.remove('is-preload');
+		});
+
+		// Animated counter for fun facts
+		function animateCounter(element, target, duration = 2000) {
+			let start = 0;
+			const increment = target / (duration / 16);
+			const timer = setInterval(() => {
+				start += increment;
+				if (start >= target) {
+					element.textContent = target >= 1000 ? Math.floor(target).toLocaleString() : Math.floor(target);
+					clearInterval(timer);
+				} else {
+					element.textContent = start >= 1000 ? Math.floor(start).toLocaleString() : Math.floor(start);
+				}
+			}, 16);
+		}
+
+		// Intersection Observer for counter animation
+		const observerOptions = {
+			threshold: 0.5,
+			rootMargin: '0px'
+		};
+
+		const factObserver = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					const factNumber = entry.target;
+					const target = parseInt(factNumber.getAttribute('data-target'));
+					if (!factNumber.classList.contains('counted')) {
+						factNumber.classList.add('counted');
+						animateCounter(factNumber, target);
+					}
+				}
+			});
+		}, observerOptions);
+
+		// Observe all fact numbers
+		document.querySelectorAll('.fact-number').forEach(fact => {
+			observerOptions.threshold = 0.3;
+			factObserver.observe(fact);
+		});
+
+		// Animate lines of code counter in footer
+		let linesOfCode = 0;
+		const codeCounter = document.getElementById('lines-of-code');
+		if (codeCounter) {
+			const codeTimer = setInterval(() => {
+				linesOfCode += Math.floor(Math.random() * 50) + 10;
+				codeCounter.textContent = linesOfCode.toLocaleString();
+				if (linesOfCode > 5000) {
+					clearInterval(codeTimer);
+				}
+			}, 100);
+		}
+	</script>
+</body>
 </html>
