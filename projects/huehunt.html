@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HueHunt - Color Matching Game & AI Critique</title>
+    <link rel="stylesheet" href="../assets/css/modern.css">
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="project-detail-body">
+    <div class="container">
+        <a href="../index.html#projects" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+
+        <header class="project-hero">
+            <div class="project-header-info">
+                <h1>🎨 HueHunt</h1>
+                <p class="section-subtitle">Mobile-first color matching game with AI-powered analytics</p>
+                <div class="project-meta-grid">
+                    <div class="meta-item">
+                        <h4>Platform</h4>
+                        <p>PWA / Mobile / Web</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Category</h4>
+                        <p>Gamified Utility</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Tech Stack</h4>
+                        <p>React, Tailwind 4, Capacitor</p>
+                    </div>
+                    <div class="meta-item">
+                        <h4>Deployment</h4>
+                        <p>Web PWA & Android Build</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="detail-content">
+            <div class="main-content">
+                <section class="content-section">
+                    <h2><i class="fas fa-gamepad"></i> Concept & Gameplay</h2>
+                    <p>HueHunt was born out of a fascination with color theory. It's a mobile-first color matching game
+                        where players must mix primary colors to match a target hue. Unlike simple games, HueHunt
+                        includes complex modes like **Hardcore (targets are hidden während mixing)** and **Memory
+                        (recalling palette sequences)**, making it a true test of visual acuity.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2><i class="fas fa-microchip"></i> Smart Features</h2>
+                    <p>The game leverages AI to provide real-time critiques of color mixes, explaining why a specific
+                        shade is off (too much blue, lacks saturation, etc.). The **Scanner/Image Analyzer** tool allows
+                        users to pick a color from their real-world environment (via photo upload) and immediately jump
+                        into a challenge to match that exact color.</p>
+                </section>
+
+                <section class="content-section">
+                    <h2><i class="fas fa-trophy"></i> Progression & Gamification</h2>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h3>XP & Leveling</h3>
+                            <p>Threshold-based progression system with unlockable badges and titles.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Streak Tracking</h3>
+                            <p>Daily completion goals and streak multipliers to encourage retention.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Daily Puzzles</h3>
+                            <p>Every player around the world gets the same seeded color puzzle per date.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Local Storage</h3>
+                            <p>High scores, total stats, and profile progress persisted locally without weight.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2><i class="fas fa-layer-group"></i> Tech Implementation</h2>
+                    <p>Built with **React** and the latest **Tailwind CSS (v4)** for ultra-fast styling. The performance
+                        is optimized for mobile browser runtimes. Using **Capacitor**, the PWA is wired for native
+                        Android packaging, allowing it to sit on the home screen with a standalone feel.</p>
+                </section>
+            </div>
+
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>Project Details</h3>
+                    <div class="tech-list mb-4">
+                        <span class="tech-pill">React</span>
+                        <span class="tech-pill">Tailwind 4</span>
+                        <span class="tech-pill">Capacitor</span>
+                        <span class="tech-pill">PWA</span>
+                        <span class="tech-pill">Canvas API</span>
+                        <span class="tech-pill">Service Workers</span>
+                    </div>
+                    <a href="#" class="link-btn"><i class="fas fa-play"></i> Play Game</a>
+                    <a href="#" class="link-btn secondary"><i class="fas fa-lock"></i> Private Repo</a>
+
+                    <div class="meta-item mt-4">
+                        <h4>Game Modes</h4>
+                        <ul class="project-features-list">
+                            <li>Casual & Hardcore</li>
+                            <li>Memory Recall</li>
+                            <li>Time Attack (1/3/5 min)</li>
+                            <li>Daily Worldwide Puzzle</li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </main>
+    </div>
+</body>
+
+</html>

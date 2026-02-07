@@ -1,5 +1,5 @@
 /* Modern Portfolio CSS */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 :root {
 	--primary-color: #6366f1;
@@ -204,12 +204,16 @@ body.is-preload * {
 }
 
 @keyframes float {
-	0%, 100% {
+
+	0%,
+	100% {
 		transform: translate(0, 0) scale(1);
 	}
+
 	33% {
 		transform: translate(50px, -50px) scale(1.1);
 	}
+
 	66% {
 		transform: translate(-50px, 50px) scale(0.9);
 	}
@@ -260,7 +264,6 @@ body.is-preload * {
 .subtitle-emoji {
 	font-size: 1.2rem;
 	margin-left: 0.5rem;
-	animation: bounce 2s infinite;
 }
 
 .hero-quote {
@@ -312,6 +315,7 @@ body.is-preload * {
 }
 
 .hero-title {
+	font-family: 'Outfit', sans-serif;
 	font-size: clamp(2.5rem, 5vw, 4rem);
 	font-weight: 800;
 	margin-bottom: 1rem;
@@ -433,7 +437,6 @@ body.is-preload * {
 .stat-icon {
 	font-size: 2rem;
 	margin-bottom: 0.5rem;
-	animation: float 3s ease-in-out infinite;
 }
 
 .scroll-indicator {
@@ -442,7 +445,6 @@ body.is-preload * {
 	left: 50%;
 	transform: translateX(-50%);
 	z-index: 1;
-	animation: bounce 2s infinite;
 }
 
 .scroll-indicator a {
@@ -452,9 +454,12 @@ body.is-preload * {
 }
 
 @keyframes bounce {
-	0%, 100% {
+
+	0%,
+	100% {
 		transform: translateX(-50%) translateY(0);
 	}
+
 	50% {
 		transform: translateX(-50%) translateY(10px);
 	}
@@ -465,6 +470,7 @@ body.is-preload * {
 		opacity: 0;
 		transform: translateY(30px);
 	}
+
 	to {
 		opacity: 1;
 		transform: translateY(0);
@@ -483,6 +489,7 @@ section {
 }
 
 .section-title {
+	font-family: 'Outfit', sans-serif;
 	font-size: clamp(2rem, 4vw, 3rem);
 	font-weight: 800;
 	margin-bottom: 1rem;
@@ -534,7 +541,7 @@ section {
 	right: 0;
 	bottom: 0;
 	background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
-				radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+		radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
 	pointer-events: none;
 }
 
@@ -586,7 +593,6 @@ section {
 	margin-bottom: 1rem;
 	position: relative;
 	z-index: 1;
-	animation: float 3s ease-in-out infinite;
 }
 
 .fact-number {
@@ -771,6 +777,7 @@ section {
 	from {
 		height: 0;
 	}
+
 	to {
 		height: 100%;
 	}
@@ -803,8 +810,95 @@ section {
 }
 
 .tech-title {
+	font-family: 'Outfit', sans-serif;
 	font-size: 1.8rem;
 	font-weight: 700;
+}
+
+/* Project Filters */
+.project-filters {
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	margin-bottom: 3rem;
+	flex-wrap: wrap;
+}
+
+.filter-btn {
+	padding: 0.6rem 1.5rem;
+	border-radius: 50px;
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	color: var(--text-secondary);
+	cursor: pointer;
+	font-weight: 600;
+	transition: all 0.3s ease;
+	backdrop-filter: blur(10px);
+}
+
+.filter-btn:hover {
+	border-color: var(--primary-color);
+	color: var(--text-primary);
+}
+
+.filter-btn.active {
+	background: var(--gradient-1);
+	color: white;
+	border-color: transparent;
+	box-shadow: var(--shadow-md);
+}
+
+.tech-stack {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.tech-pill {
+	font-size: 0.7rem;
+	padding: 0.2rem 0.6rem;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid var(--border-color);
+	border-radius: 4px;
+	color: var(--text-secondary);
+	font-weight: 500;
+}
+
+.private-badge {
+	font-size: 0.8rem;
+	color: var(--text-secondary);
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.private-badge i {
+	color: var(--accent-color);
+}
+
+.project-features-list {
+	list-style: none;
+	padding: 0.75rem 0;
+	margin: 0.75rem 0;
+	border-top: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
+	font-size: 0.85rem;
+	color: var(--text-secondary);
+}
+
+.project-features-list li {
+	margin-bottom: 0.4rem;
+	padding-left: 1.25rem;
+	position: relative;
+}
+
+.project-features-list li::before {
+	content: '→';
+	position: absolute;
+	left: 0;
+	color: var(--primary-color);
+	font-weight: 800;
 }
 
 .projects-grid {
@@ -850,9 +944,17 @@ section {
 }
 
 .project-card.featured {
-	border: 2px solid var(--primary-color);
-	background: rgba(99, 102, 241, 0.1);
+	border: 1px solid rgba(99, 102, 241, 0.5);
+	background: rgba(99, 102, 241, 0.05);
+	grid-column: span 1;
 }
+
+.project-card.featured:hover {
+	box-shadow: 0 0 30px rgba(99, 102, 241, 0.3);
+	border-color: var(--secondary-color);
+}
+
+
 
 .project-card-header {
 	display: flex;
@@ -1213,7 +1315,6 @@ section {
 .achievement-icon {
 	font-size: 3rem;
 	margin-bottom: 1rem;
-	animation: float 3s ease-in-out infinite;
 }
 
 .achievement-number {
@@ -1283,13 +1384,15 @@ section {
 
 .heart {
 	color: var(--accent-color);
-	animation: heartbeat 1.5s ease-in-out infinite;
 }
 
 @keyframes heartbeat {
-	0%, 100% {
+
+	0%,
+	100% {
 		transform: scale(1);
 	}
+
 	50% {
 		transform: scale(1.2);
 	}
@@ -1427,4 +1530,3 @@ section {
 ::-webkit-scrollbar-thumb:hover {
 	background: var(--gradient-2);
 }
-
