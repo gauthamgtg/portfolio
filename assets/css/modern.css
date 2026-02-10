@@ -1,23 +1,68 @@
 /* Modern Portfolio CSS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
+/* ================================
+   THEME SYSTEM - Dark Mode (Default)
+   ================================ */
 :root {
-	--primary-color: #6366f1;
-	--secondary-color: #8b5cf6;
-	--accent-color: #ec4899;
-	--bg-dark: #0a0a0f;
-	--bg-darker: #050508;
-	--bg-card: rgba(255, 255, 255, 0.05);
-	--text-primary: #ffffff;
-	--text-secondary: #a1a1aa;
-	--border-color: rgba(255, 255, 255, 0.1);
-	--gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-	--gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-	--gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
-	--shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.4);
+	/* Core Brand Colors - Unique Teal/Coral Palette */
+	--primary-color: #0ea5e9;
+	--primary-dark: #0284c7;
+	--secondary-color: #f97316;
+	--accent-color: #14b8a6;
+
+	/* Dark Theme Colors */
+	--bg-primary: #0f172a;
+	--bg-secondary: #1e293b;
+	--bg-card: rgba(30, 41, 59, 0.8);
+	--bg-card-hover: rgba(51, 65, 85, 0.9);
+	--text-primary: #f1f5f9;
+	--text-secondary: #94a3b8;
+	--text-muted: #64748b;
+	--border-color: rgba(148, 163, 184, 0.2);
+	--border-hover: rgba(14, 165, 233, 0.5);
+
+	/* Unique Gradients - Teal to Blue */
+	--gradient-1: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+	--gradient-2: linear-gradient(135deg, #f97316 0%, #fb923c 100%);
+	--gradient-3: linear-gradient(135deg, #14b8a6 0%, #22d3ee 100%);
+	--gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e3a5f 50%, #0f172a 100%);
+
+	/* Shadows */
+	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.25);
+	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+	--shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.5);
+	--shadow-glow: 0 0 30px rgba(14, 165, 233, 0.3);
+
+	/* Deprecated but kept for compatibility */
+	--bg-dark: var(--bg-primary);
+	--bg-darker: var(--bg-secondary);
+}
+
+/* ================================
+   LIGHT MODE
+   ================================ */
+[data-theme="light"] {
+	--bg-primary: #f8fafc;
+	--bg-secondary: #e2e8f0;
+	--bg-card: rgba(255, 255, 255, 0.9);
+	--bg-card-hover: rgba(255, 255, 255, 1);
+	--text-primary: #0f172a;
+	--text-secondary: #475569;
+	--text-muted: #64748b;
+	--border-color: rgba(15, 23, 42, 0.1);
+	--border-hover: rgba(14, 165, 233, 0.5);
+	--gradient-hero: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 50%, #f8fafc 100%);
+	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+	--shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.15);
+	--shadow-glow: 0 0 30px rgba(14, 165, 233, 0.2);
+
+	/* Override deprecated */
+	--bg-dark: var(--bg-primary);
+	--bg-darker: var(--bg-secondary);
 }
 
 * {
@@ -32,10 +77,11 @@ html {
 
 body {
 	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-	background: var(--bg-darker);
+	background: var(--bg-primary);
 	color: var(--text-primary);
 	line-height: 1.6;
 	overflow-x: hidden;
+	transition: background 0.3s ease, color 0.3s ease;
 }
 
 body.is-preload * {
@@ -57,15 +103,23 @@ body.is-preload * {
 	right: 0;
 	z-index: 1000;
 	padding: 1rem 0;
-	background: rgba(10, 10, 15, 0.8);
+	background: rgba(15, 23, 42, 0.85);
 	backdrop-filter: blur(20px);
 	border-bottom: 1px solid var(--border-color);
 	transition: all 0.3s ease;
 }
 
+[data-theme="light"] .navbar {
+	background: rgba(248, 250, 252, 0.85);
+}
+
 .navbar.scrolled {
-	background: rgba(10, 10, 15, 0.95);
+	background: rgba(15, 23, 42, 0.95);
 	box-shadow: var(--shadow-md);
+}
+
+[data-theme="light"] .navbar.scrolled {
+	background: rgba(248, 250, 252, 0.95);
 }
 
 .nav-container {
@@ -118,6 +172,64 @@ body.is-preload * {
 
 .nav-link:hover::after {
 	width: 100%;
+}
+
+/* Navigation CTA Button */
+.nav-cta {
+	background: var(--gradient-1);
+	color: white !important;
+	padding: 0.5rem 1.25rem;
+	border-radius: 8px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.nav-cta:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4);
+}
+
+.nav-cta::after {
+	display: none;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+	background: var(--bg-card);
+	border: 1px solid var(--border-color);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	color: var(--text-secondary);
+	font-size: 1.1rem;
+}
+
+.theme-toggle:hover {
+	border-color: var(--primary-color);
+	color: var(--primary-color);
+	transform: rotate(15deg);
+	box-shadow: var(--shadow-glow);
+}
+
+.theme-toggle .fa-sun {
+	display: none;
+}
+
+.theme-toggle .fa-moon {
+	display: block;
+}
+
+[data-theme="light"] .theme-toggle .fa-sun {
+	display: block;
+}
+
+[data-theme="light"] .theme-toggle .fa-moon {
+	display: none;
 }
 
 .hamburger {
@@ -2608,10 +2720,220 @@ section {
 
 	0%,
 	100% {
-		box-shadow: 0 4px 16px rgba(99, 102, 241, 0.4);
+		box-shadow: 0 4px 16px rgba(14, 165, 233, 0.4);
 	}
 
 	50% {
-		box-shadow: 0 4px 24px rgba(99, 102, 241, 0.6), 0 0 40px rgba(99, 102, 241, 0.3);
+		box-shadow: 0 4px 24px rgba(14, 165, 233, 0.6), 0 0 40px rgba(14, 165, 233, 0.3);
 	}
+}
+
+/* ================================
+   LIGHT MODE OVERRIDES
+   ================================ */
+[data-theme="light"] .hero-background .gradient-orb {
+	opacity: 0.15;
+}
+
+[data-theme="light"] .hero-tagline {
+	background: rgba(14, 165, 233, 0.1);
+	border-color: rgba(14, 165, 233, 0.2);
+}
+
+[data-theme="light"] .hero-quote {
+	background: rgba(14, 165, 233, 0.05);
+	border-left-color: var(--primary-color);
+}
+
+[data-theme="light"] .stat-card,
+[data-theme="light"] .fact-card,
+[data-theme="light"] .why-me-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .skill-category,
+[data-theme="light"] .experience-item,
+[data-theme="light"] .education-card,
+[data-theme="light"] .contact-card {
+	background: var(--bg-card);
+	border-color: var(--border-color);
+	box-shadow: var(--shadow-sm);
+}
+
+[data-theme="light"] .stat-card:hover,
+[data-theme="light"] .fact-card:hover,
+[data-theme="light"] .why-me-card:hover,
+[data-theme="light"] .project-card:hover,
+[data-theme="light"] .skill-category:hover,
+[data-theme="light"] .contact-card:hover {
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+	border-color: var(--primary-color);
+	transform: translateY(-5px);
+}
+
+[data-theme="light"] .section-catchphrase {
+	background: rgba(14, 165, 233, 0.08);
+	border-color: rgba(14, 165, 233, 0.2);
+}
+
+[data-theme="light"] .sql-terminal-quote {
+	background: rgba(15, 23, 42, 0.05);
+	border-color: rgba(15, 23, 42, 0.1);
+	box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .terminal-command {
+	color: var(--text-primary);
+}
+
+[data-theme="light"] .philosophy-quote {
+	color: var(--text-primary);
+}
+
+[data-theme="light"] .philosophy-card.highlight {
+	background: var(--bg-card);
+	border-color: var(--primary-color);
+}
+
+[data-theme="light"] .footer {
+	background: var(--bg-secondary);
+	border-top: 1px solid var(--border-color);
+}
+
+[data-theme="light"] .fun-facts-section,
+[data-theme="light"] .achievements-section,
+[data-theme="light"] .philosophy-section {
+	background: #f8fafc;
+}
+
+[data-theme="light"] .philosophy-card.highlight {
+	background: #ffffff;
+	border-color: rgba(14, 165, 233, 0.2);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .value-card {
+	background: #ffffff;
+	border-color: rgba(0, 0, 0, 0.05);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .value-card h4 {
+	color: var(--text-primary);
+}
+
+[data-theme="light"] .value-card p {
+	color: var(--text-secondary);
+}
+
+[data-theme="light"] .achievement-card.highlight {
+	background: #ffffff;
+	border-color: var(--primary-color);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .achievement-number {
+	color: var(--primary-color);
+	background: none;
+}
+
+[data-theme="light"] .achievement-label {
+	color: var(--text-primary);
+}
+
+[data-theme="light"] .achievement-desc {
+	color: var(--text-secondary);
+}
+
+/* Fix icon glow visibility in light mode */
+[data-theme="light"] .why-me-card:hover .why-me-icon,
+[data-theme="light"] .education-card:hover .education-icon,
+[data-theme="light"] .contact-card:hover .contact-icon {
+	filter: brightness(1.1);
+	/* Overrides brightness(1.2) and drop-shadow glow */
+}
+
+[data-theme="light"] .tech-pill {
+	border-color: rgba(0, 0, 0, 0.05);
+	background: rgba(0, 0, 0, 0.03);
+}
+
+/* Filled tech stack pills for light mode */
+[data-theme="light"] .tech-nextjs {
+	background: #f3f4f6;
+	color: #111827;
+	border-color: #e5e7eb;
+}
+
+[data-theme="light"] .tech-react {
+	background: #ecfeff;
+	color: #0891b2;
+	border-color: #cffafe;
+}
+
+[data-theme="light"] .tech-nodejs {
+	background: #f0fdf4;
+	color: #166534;
+	border-color: #dcfce7;
+}
+
+[data-theme="light"] .tech-typescript {
+	background: #eff6ff;
+	color: #1d4ed8;
+	border-color: #dbeafe;
+}
+
+[data-theme="light"] .tech-mongodb {
+	background: #f0fdf4;
+	color: #15803d;
+	border-color: #dcfce7;
+}
+
+[data-theme="light"] .tech-postgresql {
+	background: #f0f9ff;
+	color: #0369a1;
+	border-color: #e0f2fe;
+}
+
+[data-theme="light"] .tech-fastapi {
+	background: #f0fdfa;
+	color: #0f766e;
+	border-color: #ccfbf1;
+}
+
+[data-theme="light"] .tech-python {
+	background: #eff6ff;
+	color: #1d4ed8;
+	border-color: #dbeafe;
+}
+
+[data-theme="light"] .tech-tableau {
+	background: #fff7ed;
+	color: #c2410c;
+	border-color: #ffedd5;
+}
+
+[data-theme="light"] .tech-bigquery {
+	background: #eff6ff;
+	color: #1d4ed8;
+	border-color: #dbeafe;
+}
+
+[data-theme="light"] .tech-clevertap {
+	background: #fef2f2;
+	color: #b91c1c;
+	border-color: #fee2e2;
+}
+
+[data-theme="light"] .hamburger span {
+	background: var(--text-primary);
+}
+
+[data-theme="light"] .btn-outline {
+	background: rgba(255, 255, 255, 0.8);
+	border-color: var(--border-color);
+	color: var(--text-primary);
+}
+
+[data-theme="light"] .btn-outline:hover {
+	background: rgba(14, 165, 233, 0.1);
+	border-color: var(--primary-color);
 }
