@@ -210,3 +210,18 @@
     overflow-x: auto;
     margin-top: 1rem;
 }
+
+@media (max-width: 640px) {
+    .project-hero {
+        padding: 1.5rem;
+    }
+
+    .project-header-info h1 {
+        font-size: 2rem;
+    }
+
+    .project-meta-grid {
+        gap: 1.5rem;
+        grid-template-columns: 1fr;
+    }
+}
